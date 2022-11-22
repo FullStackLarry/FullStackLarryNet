@@ -1,0 +1,31 @@
+.tictactoe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-animation: tictactoe-enter 1s;
+  animation: tictactoe-enter 1s;
+}
+
+@-webkit-keyframes tictactoe-enter {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes tictactoe-enter {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+.tictactoe > h2 {
+  margin: 0.5rem;
+}
+
+.tictactoe-information {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}

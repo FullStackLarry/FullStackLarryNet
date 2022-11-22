@@ -1,0 +1,49 @@
+.container {
+  border: 2px solid var(--primary-color);
+}
+
+.header-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  z-index: 100;
+  -webkit-animation: header-enter 1s;
+  animation: header-enter 1s;
+}
+
+@-webkit-keyframes header-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes header-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+.content-container {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  top: 3.1rem;
+  height: calc(100vh - 3.1rem);
+  justify-content: center;
+  -webkit-animation: content-enter 1s;
+  animation: content-enter 1s;
+}
+
+@-webkit-keyframes content-enter {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes content-enter {
+  from {
+    transform: translateX(100vw);
+  }
+}

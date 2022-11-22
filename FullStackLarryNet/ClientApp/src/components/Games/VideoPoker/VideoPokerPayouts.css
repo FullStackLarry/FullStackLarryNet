@@ -1,0 +1,45 @@
+.videopoker-payouts {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.videopoker-payout-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.videopoker-payouts,
+.videopoker-payout-description,
+.videopoker-payout-amount {
+  width: 100%;
+  border: 1px solid yellow;
+}
+
+.videopoker-payout-description,
+.videopoker-payout-amount {
+  padding: 0.2rem;
+}
+
+.videopoker-payout-description {
+  padding-left: 1rem;
+}
+
+.videopoker-payout-amount {
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.videopoker-payout-description[data-handmade="true"],
+.videopoker-payout-amount[data-handmade="true"] {
+  color: white;
+}
+
+.videopoker-payout-made {
+  height: 2rem;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  color: white;
+}

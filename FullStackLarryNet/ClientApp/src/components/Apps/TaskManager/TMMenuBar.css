@@ -1,0 +1,59 @@
+.tmmenubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid black 2px;
+}
+
+.tmmenubar:first-child {
+  margin-right: auto;
+}
+
+.tmmenubar-title {
+  width: 100%;
+  margin-left: 0.25em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.tmmenubar-user {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  cursor: pointer;
+}
+
+.tmmenubar-user:hover,
+.tmmenubar-user:focus {
+  opacity: 1;
+}
+
+.tmmenubar-user > img {
+  width: 3em;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.tmmenubar-user > div {
+  margin-left: 0.25em;
+  padding-right: 0.25em;
+  font-size: large;
+  font-weight: bold;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  pointer-events: none;
+}
+
+.tmmenubar-buttons {
+  display: flex;
+}
+
+.tmmenubar-button {
+  margin: 0.5em;
+}

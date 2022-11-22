@@ -1,0 +1,31 @@
+.memory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-animation: memory-enter 1s;
+  animation: memory-enter 1s;
+}
+
+@-webkit-keyframes memory-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes memory-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+.memory > h2 {
+  margin: 0.5rem;
+}
+
+.memory-information {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}

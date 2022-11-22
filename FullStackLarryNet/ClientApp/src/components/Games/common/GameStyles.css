@@ -1,0 +1,49 @@
+.game-button {
+  margin: 0.25em;
+  border-radius: 0.3em;
+  border-color: white;
+  padding: 0.25em;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 250ms ease-in-out;
+}
+
+.game-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.game-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  position: fixed;
+  max-width: 50ch;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1em;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}

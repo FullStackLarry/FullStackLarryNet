@@ -1,0 +1,61 @@
+.tictactoe-grid {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.tictactoe-grid[data-disabled="true"] {
+  pointer-events: none;
+}
+
+.tictactoe-cell {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Chalktastic", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tictactoe-cell[data-value="x"] {
+  color: blue;
+}
+
+.tictactoe-cell[data-value="o"] {
+  color: yellow;
+}
+
+.tictactoe-cell[data-value="x"],
+.tictactoe-cell[data-value="o"] {
+  cursor: not-allowed;
+}
+
+.tictactoe-cell:nth-child(1),
+.tictactoe-cell:nth-child(2),
+.tictactoe-cell:nth-child(3) {
+  border-top: none;
+}
+
+.tictactoe-cell:nth-child(1),
+.tictactoe-cell:nth-child(4),
+.tictactoe-cell:nth-child(7) {
+  border-left: none;
+}
+
+.tictactoe-cell:nth-child(3),
+.tictactoe-cell:nth-child(6),
+.tictactoe-cell:nth-child(9) {
+  border-right: none;
+}
+
+.tictactoe-cell:nth-child(7),
+.tictactoe-cell:nth-child(8),
+.tictactoe-cell:nth-child(9) {
+  border-bottom: none;
+}

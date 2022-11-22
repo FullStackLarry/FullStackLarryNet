@@ -1,0 +1,42 @@
+.videopoker-controls {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+}
+
+.videopoker-win,
+.videopoker-credits {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  text-shadow: 2px 2px yellow;
+}
+
+.videopoker-win {
+  padding-left: 0.2rem;
+}
+
+.VideoPokerCredits {
+  padding-right: 0.2rem;
+}
+
+.videopoker-credits {
+  text-align: right;
+}
+
+.videopoker-bet-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videopoker-bet button {
+  margin: 0.5rem;
+}
+
+.videopoker-deal-button-wrapper {
+  margin-top: 0.5rem;
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+}

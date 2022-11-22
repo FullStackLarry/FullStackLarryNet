@@ -1,0 +1,79 @@
+@import url("./VideoPokerCard.css");
+
+.videopoker-cards-area {
+  position: relative;
+  padding-top: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 0.25em;
+}
+
+.videopoker-card-wrapper {
+  width: 5em;
+  height: 9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videopoker-card {
+  outline: 2px solid black;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.videopoker-card:hover {
+  outline: 2px solid yellow;
+  /* transform: scale(1.2); */
+}
+
+.videopoker-card[data-disabled="true"] {
+  pointer-events: none;
+}
+
+.videopoker-card-held {
+  margin-top: 0.2em;
+  border: 2px solid white;
+  text-align: center;
+  color: transparent;
+}
+
+.videopoker-card-held[data-held="true"] {
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+.videopoker-game-over {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: black;
+  color: red;
+  text-shadow: 2px 2px yellow;
+  z-index: 101;
+  -webkit-animation: gameover-blink 1.5s steps(3, start) infinite;
+  animation: gameover-blink 1.5s steps(3, start) infinite;
+}
+
+.videopoker-game-over[data-hidden="true"] {
+  display: none;
+}
+
+@-webkit-keyframes gameover-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes gameover-blink {
+  to {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@font-face {
+  font-family: Chalktastic;
+  src: url("./fonts/Chalktastic.ttf");
+}
+
+:root {
+  --primary-color-value: 200;
+  --primary-color: hsl(var(--primary-color-value), 50%, 50%);
+  --primary-color-highlight: hsl(var(--primary-color-value), 50%, 60%);
+  --tm-bg-color-1: #00b4db;
+  --tm-bg-color-2: hsl(184, 100%, 35%);
+  --tm-bg-gradient: linear-gradient(
+    to right,
+    var(--tm-bg-color-1),
+    var(--tm-bg-color-2)
+  );
+  --tm-fg-color: hsl(200, 80%, 20%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+textarea {
+  resize: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}

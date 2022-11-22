@@ -1,0 +1,48 @@
+.tmassignees {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border-bottom: solid black 2px;
+  border-left: solid black 2px;
+}
+
+.tmassignees-header {
+  width: 100%;
+  padding-bottom: 0.25em;
+  border-bottom: solid black 2px;
+}
+
+.tmassignees-title {
+  width: 100%;
+  text-align: center;
+}
+
+.tmassignees-title > h3 {
+  margin: 0.2em;
+}
+
+.tmassignees-input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.tmassignees-input > input {
+  width: 50%;
+  margin-left: 0.25em;
+  margin-right: auto;
+}
+
+.tmassignees-input > button {
+  margin-right: 0.25em;
+}
+
+.tmassignees-items {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 1em;
+}

@@ -1,0 +1,45 @@
+.hangman-alphabet {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.25rem;
+}
+
+.hangman-alphabet[data-disabled="true"] {
+  pointer-events: none;
+}
+
+.hangman-alphabet-letter {
+  border: 2px solid black;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.hangman-alphabet-letter[data-disabled="false"]:hover {
+  background-color: white;
+}
+
+.hangman-alphabet-letter[data-disabled="true"]:hover {
+  cursor: not-allowed;
+}
+
+.hangman-alphabet-letter[data-valid="true"] {
+  background-color: lightgreen;
+}
+
+.hangman-alphabet-letter[data-invalid="true"] {
+  background-color: gray;
+}
+
+@media screen and (max-width: 400px) {
+  .hangman-alphabet-letter {
+    font-size: 2rem;
+  }
+}

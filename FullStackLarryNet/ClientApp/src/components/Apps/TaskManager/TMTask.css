@@ -1,0 +1,58 @@
+.tmtask {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25em 0.25em 0 0.25em;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 1em;
+  padding-bottom: 0.25em;
+}
+
+.tmtask[data-selected="true"] {
+  opacity: 0.8;
+}
+
+.tmtask:hover,
+.tmtask:focus {
+  border: 2px solid darkgray;
+  cursor: pointer;
+}
+
+.tmtask > h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.tmtask > p {
+  margin: 0 0.25em 0.25em 0.25em;
+}
+
+.tmtask-status {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.tmtask-dates {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tmtask-label {
+  font-weight: bold;
+  margin-left: 0.25em;
+}
+
+.tmtask-info {
+  text-align: right;
+  margin-right: 0.25em;
+}
+
+.tmtask > button {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

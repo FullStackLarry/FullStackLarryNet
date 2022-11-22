@@ -1,0 +1,51 @@
+.hangman-word {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hangman-word-letter {
+  width: 3rem;
+  border-bottom: 2px solid transparent;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: white;
+  color: transparent;
+  cursor: default;
+}
+
+.hangman-word-letter[data-show="true"] {
+  border-bottom: 2px solid white;
+  -webkit-animation: uncover-letter 500ms forwards;
+  animation: uncover-letter 500ms forwards;
+}
+
+@-webkit-keyframes uncover-letter {
+  to {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+@keyframes uncover-letter {
+  to {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+.hangman-word-letter[data-small="true"] {
+  width: 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .hangman-word-letter {
+    width: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
