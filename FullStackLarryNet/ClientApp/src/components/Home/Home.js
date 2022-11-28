@@ -14,6 +14,9 @@ function Home() {
             <a href="#experience">Experience</a>
           </li>
           <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
             <a href="#skills">Skills</a>
           </li>
           <li>
@@ -25,12 +28,12 @@ function Home() {
         <h2>About</h2>
         <div className="home-section-border">
           <p>
-            Adaptable Full Stack Developer with 15+ years of driving technical
-            projects from front-end to back-end by leveraging expertise in .NET
-            applications, SQL Server, and JavaScript. Ensure success of
-            business-critical projects by designing effective website
-            architecture to align final applications with key design elements
-            that drive end user engagement and conversion.
+            I am a full stack developer with over 25 years experience. I
+            primarily worked on client/server .NET Windows Forms applications
+            with SQL Server as the backend database at the start of my career. I
+            then transitioned to ASP.NET Web Forms, MVC and Web API
+            applications. I am now focusing more on Javascript frameworks (e.g.
+            React, Node, etc.) and NoSQL databases (e.g. MongoDB).
           </p>
           <br />
           <p>
@@ -93,6 +96,85 @@ function Home() {
               DB2 database system.
             </li>
           </ul>
+          <span className="resume-company">Henry Company Homes</span>
+          <br />
+          <span className="resume-title">Programmer Analyst</span>
+          <br />
+          <span className="resume-dates">August 2004 to May 2006</span>
+          <ul className="resume-list">
+            <li>
+              Developed and maintained Windows Applications using VB6 and SQL
+              Server.
+            </li>
+            <li>Developed and maintained websites using ASP.NET Web Forms.</li>
+            <li>Developed and maintained websites using classic ASP.</li>
+            <li>Assisted in troubleshooting network and hardware issues.</li>
+          </ul>
+          <span className="resume-company">Best Software</span>
+          <br />
+          <span className="resume-title">Software Engineer</span>
+          <br />
+          <span className="resume-dates">October 2000 to July 2004</span>
+          <ul className="resume-list">
+            <li>
+              Utilized VB6 and Microsoft Access to develop and maintain
+              accounting software used by CPA firms.
+            </li>
+          </ul>
+          <span className="resume-company">Med3000</span>
+          <br />
+          <span className="resume-title">Software Engineer</span>
+          <br />
+          <span className="resume-dates">June 1998 to October 2000</span>
+          <ul className="resume-list">
+            <li>
+              Developed and maintained custom in-house applications using VB6,
+              VBA for Excel, and DBase.
+            </li>
+            <li>
+              Retrieved data from Informix database running on IBM AIX operating
+              system.
+            </li>
+          </ul>
+          <span className="resume-company">CPASoftware</span>
+          <br />
+          <span className="resume-title">Programmer/Analyst</span>
+          <br />
+          <span className="resume-dates">June 1996 to June 1998</span>
+          <ul className="resume-list">
+            <li>
+              Developed and maintained DOS/SCO Unix state tax applications using
+              custom in-house programming language.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="education" className="home-section">
+        <h2>Education</h2>
+        <div className="home-section-border">
+          <span className="education-school">University of West Florida</span>
+          <br />
+          <span className="education-detail">Pensacola, FL</span>
+          <br />
+          <span className="education-detail">1993 - 1996</span>
+          <br />
+          <span className="education-detail">
+            B.S. Degree in Computer Information Systems
+          </span>
+          <br />
+          <span className="education-detail">Minor in Business</span>
+          <br />
+          <br />
+          <span className="education-school">Gulf Coast Community College</span>
+          <br />
+          <span className="education-detail">Panama City, FL</span>
+          <br />
+          <span className="education-detail">1990 - 1993</span>
+          <br />
+          <span className="education-detail">
+            A.A. Degree in Computer Science
+          </span>
+          <br />
         </div>
       </div>
       <div id="skills" className="home-section">

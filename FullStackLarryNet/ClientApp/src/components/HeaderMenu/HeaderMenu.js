@@ -29,6 +29,7 @@ function Header() {
           <div className="dropdown-content">
             <Link to="/games/hangman">Hang Man</Link>
             <Link to="/games/memory">Memory</Link>
+            <Link to="/games/millebornes">Mille Bornes</Link>
             <Link to="/games/tictactoe">Tic Tac Toe</Link>
             <Link to="/games/videopoker">Video Poker</Link>
           </div>
