@@ -32,8 +32,10 @@ function Home() {
             primarily worked on client/server .NET Windows Forms applications
             with SQL Server as the backend database at the start of my career. I
             then transitioned to ASP.NET Web Forms, MVC and Web API
-            applications. I am now focusing more on Javascript frameworks (e.g.
-            React, Node, etc.) and NoSQL databases (e.g. MongoDB).
+            applications. I have lately been learning more about Javascript
+            frameworks (e.g. React, Node, Express, etc.) and NoSQL databases
+            (e.g. MongoDB). I love learning new technologies and expanding my
+            knowledge of existing ones.
           </p>
           <br />
           <p>
