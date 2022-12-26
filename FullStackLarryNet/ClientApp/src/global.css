@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@font-face {
+  font-family: Futura;
+  src: url("./fonts/futur.ttf");
+}
 @font-face {
   font-family: Chalktastic;
   src: url("./fonts/Chalktastic.ttf");
@@ -31,7 +35,8 @@ html {
 }
 
 body {
-  font-family: "Share Tech Mono", monospace;
+  /* font-family: "Share Tech Mono", monospace; */
+  font-family: "Futura", monospace;
   background-color: black;
   color: white;
   width: 100vw;
