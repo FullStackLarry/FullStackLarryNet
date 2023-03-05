@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import axios from "axios";
+
+import { APIUrl } from "./components/Apps/Data/api";
 
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
 import Home from "./components/Home/Home";
@@ -13,6 +16,13 @@ import "./global.css";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    axios.post(`${APIUrl()}log/`).catch((error) => {
+      if (process.env.NODE_ENV === "development")
+        alert(error.response.data.error);
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <header className="container header-container">
