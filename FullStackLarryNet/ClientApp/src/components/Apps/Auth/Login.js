@@ -100,19 +100,21 @@ export default function Login(props) {
                 props.openRegister();
               }}
             />
-            <p>If you have not registered.</p>
+            <p>Create your account using your email address.</p>
             <input
               type="button"
               value="Send Validation Email"
               onClick={() => props.openEmail()}
             />
-            <p>If you have not received your validation email.</p>
+            <p>Send a code to validate your email address.</p>
             <input
               type="button"
               value="Validate Email"
               onClick={() => props.openValidate()}
             />
-            <p>If you have not validated your email.</p>
+            <p>
+              Validate your email address after you have received your code.
+            </p>
           </div>
           <ModalSpinner loading={loading} />
           <ToastContainer />

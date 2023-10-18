@@ -14,10 +14,10 @@ function Home() {
             <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -25,17 +25,16 @@ function Home() {
         </ul>
       </div>
       <div id="about" className="home-section">
-        <h2>About</h2>
+        <h2>About Larry Byrd</h2>
         <div className="home-section-border">
           <p>
-            I am a full stack developer with over 25 years experience. I
-            primarily worked on client/server .NET Windows Forms applications
-            with SQL Server as the backend database at the start of my career. I
-            then transitioned to ASP.NET Web Forms, MVC and Web API
-            applications. I have lately been learning more about Javascript
-            frameworks (e.g. React, Node, Express, etc.) and NoSQL databases
-            (e.g. MongoDB). I love learning new technologies and expanding my
-            knowledge of existing ones.
+            Experienced and adaptable full stack developer adept at developing
+            and maintaining .NET client/server applications with SQL Server.
+            Have recently been learning more about JavaScript frameworks and
+            NoSQL databases. In addition to development, interested in
+            Cybersecurity and currently working on CompTIA Security+
+            certification. Excited to learn new technologies and expand existing
+            knowledge.
           </p>
           <br />
           <p>
@@ -72,6 +71,22 @@ function Home() {
             <li>
               Developed and maintained websites using ASP.NET, MVC, jQuery and
               Bootstrap.
+            </li>
+            <li>
+              Developed the grade book application used by all teachers to
+              perform a wide variety of school related activities (e.g., daily
+              grades, absences, discipline, test scores, fees).
+            </li>
+            <li>
+              Developed the district application used by district and school
+              administrators for analyzing truancy, test scores, developing
+              intervention plans, printing report cards, scheduling students,
+              and many other tasks.
+            </li>
+            <li>
+              Developed the student/parent web portal for viewing grades,
+              assignments, graduation information, and registering for classes
+              for the next school year.
             </li>
             <li>
               Utilized OAuth2 for 3rd party authorization from ClassLink.com.
@@ -151,34 +166,6 @@ function Home() {
           </ul>
         </div>
       </div>
-      <div id="education" className="home-section">
-        <h2>Education</h2>
-        <div className="home-section-border">
-          <span className="education-school">University of West Florida</span>
-          <br />
-          <span className="education-detail">Pensacola, FL</span>
-          <br />
-          <span className="education-detail">1993 - 1996</span>
-          <br />
-          <span className="education-detail">
-            B.S. Degree in Computer Information Systems
-          </span>
-          <br />
-          <span className="education-detail">Minor in Business</span>
-          <br />
-          <br />
-          <span className="education-school">Gulf Coast Community College</span>
-          <br />
-          <span className="education-detail">Panama City, FL</span>
-          <br />
-          <span className="education-detail">1990 - 1993</span>
-          <br />
-          <span className="education-detail">
-            A.A. Degree in Computer Science
-          </span>
-          <br />
-        </div>
-      </div>
       <div id="skills" className="home-section">
         <h2>Skills</h2>
         <div className="home-section-border home-skills">
@@ -227,6 +214,40 @@ function Home() {
               alt="mongo db logo"
             />
           </div>
+          <div>
+            <img src={require("./images/db2.png")} alt="ibm db2 logo" />
+          </div>
+          <div>
+            <img src={require("./images/cobol.png")} alt="cobol logo" />
+          </div>
+        </div>
+      </div>
+      <div id="education" className="home-section">
+        <h2>Education</h2>
+        <div className="home-section-border">
+          <span className="education-school">University of West Florida</span>
+          <br />
+          <span className="education-detail">Pensacola, FL</span>
+          <br />
+          <span className="education-detail">1993 - 1996</span>
+          <br />
+          <span className="education-detail">
+            B.S. Degree in Computer Information Systems
+          </span>
+          <br />
+          <span className="education-detail">Minor in Business</span>
+          <br />
+          <br />
+          <span className="education-school">Gulf Coast Community College</span>
+          <br />
+          <span className="education-detail">Panama City, FL</span>
+          <br />
+          <span className="education-detail">1990 - 1993</span>
+          <br />
+          <span className="education-detail">
+            A.A. Degree in Computer Science
+          </span>
+          <br />
         </div>
       </div>
       <div id="contact" className="home-section">
