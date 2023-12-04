@@ -56,6 +56,18 @@ function Home() {
       <div id="experience" className="home-section">
         <h2>Experience</h2>
         <div className="home-section-border">
+          <span className="resume-company">Henry Company Homes</span>
+          <br />
+          <span className="resume-title">
+            Web/Software Development Consultant
+          </span>
+          <br />
+          <span className="resume-dates">October 2023 to Present</span>
+          <ul className="resume-list">
+            <li>Convert VB.Net websites to C#.</li>
+            <li>Convert classic ASP websites to ASP.NET.</li>
+            <li>Convert VB6 Windows applications to C#.</li>
+          </ul>
           <span className="resume-company">
             Santa Rosa County School District
           </span>
