@@ -65,6 +65,7 @@
 
 .home-section a {
   text-decoration: none;
+  color: lime;
 }
 
 .home-hovermenu {
@@ -136,6 +137,21 @@
   background-color: white;
 }
 
-a {
-  color: lime;
+.home-certifications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.home-certifications a {
+  color: blue;
+  -webkit-text-decoration: underline;
+  text-decoration:underline;
+}
+
+.home-certifications a:hover {
+  color: purple;
 }

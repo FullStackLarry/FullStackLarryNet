@@ -17,6 +17,9 @@ function Home() {
             <a href="#skills">Skills</a>
           </li>
           <li>
+            <a href="#certifications">Certifications</a>
+          </li>
+          <li>
             <a href="#education">Education</a>
           </li>
           <li>
@@ -32,9 +35,8 @@ function Home() {
             and maintaining .NET client/server applications with SQL Server.
             Have recently been learning more about JavaScript frameworks and
             NoSQL databases. In addition to development, interested in
-            Cybersecurity and currently working on CompTIA Security+
-            certification. Excited to learn new technologies and expand existing
-            knowledge.
+            Cybersecurity and have a CompTIA Security+ certification. Excited to
+            learn new technologies and expand existing knowledge.
           </p>
           <br />
           <p>
@@ -231,6 +233,27 @@ function Home() {
           </div>
           <div>
             <img src={require("./images/cobol.png")} alt="cobol logo" />
+          </div>
+        </div>
+      </div>
+      <div id="certifications" className="home-section">
+        <h2>Certifications</h2>
+        <div className="home-section-border home-certifications">
+          <div>
+            <img
+              src={require("./images/comptia-security-ce-certification.png")}
+              alt="CompTIA Security+ Certification logo"
+            />
+          </div>
+          <div>
+            <a
+              href="http://verify.CompTIA.org"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Verify CompTIA Certificate
+            </a>
+            <p>Code: TL91C4ETE2EEQWS7</p>
           </div>
         </div>
       </div>
