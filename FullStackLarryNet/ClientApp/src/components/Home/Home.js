@@ -11,6 +11,9 @@ function Home() {
             <a href="#about">About</a>
           </li>
           <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
             <a href="#experience">Experience</a>
           </li>
           <li>
@@ -21,9 +24,6 @@ function Home() {
           </li>
           <li>
             <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -51,6 +51,17 @@ function Home() {
               target="_blank"
             >
               https://github.com/FullStackLarry
+            </a>
+          </p>
+        </div>
+      </div>
+      <div id="contact" className="home-section">
+        <h2>Contact</h2>
+        <div className="home-section-border">
+          <p>
+            E-Mail&nbsp;
+            <a href="mailto:Larry@FullStackLarry.com">
+              Larry@FullStackLarry.com
             </a>
           </p>
         </div>
@@ -283,17 +294,6 @@ function Home() {
             A.A. Degree in Computer Science
           </span>
           <br />
-        </div>
-      </div>
-      <div id="contact" className="home-section">
-        <h2>Contact</h2>
-        <div className="home-section-border">
-          <p>
-            E-Mail&nbsp;
-            <a href="mailto:Larry@FullStackLarry.com">
-              Larry@FullStackLarry.com
-            </a>
-          </p>
         </div>
       </div>
     </div>
