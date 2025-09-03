@@ -30,21 +30,7 @@ function Home() {
       <div id="about" className="home-section">
         <h2>About Larry Byrd</h2>
         <div className="home-section-border">
-          <p>
-            Experienced and adaptable full stack developer adept at developing
-            and maintaining .NET client/server applications with SQL Server.
-            Have recently been learning more about JavaScript frameworks and
-            NoSQL databases. In addition to development, interested in
-            Cybersecurity and have a CompTIA Security+ certification. Excited to
-            learn new technologies and expand existing knowledge.
-          </p>
-          <br />
-          <p>
-            This website is written in React. The APPS menu at the top contains
-            a simple task manager application that utilizes a NodeJS Express
-            REST API hosted on Heroku and a MongoDB database. The GAMES menu
-            contains a few games that you may enjoy playing. The GIT repository
-            for this website and the API can be found at&nbsp;
+          <p>I am a full stack software developer.</p>
             <a
               href="https://github.com/FullStackLarry"
               rel="noreferrer"
@@ -52,7 +38,6 @@ function Home() {
             >
               https://github.com/FullStackLarry
             </a>
-          </p>
         </div>
       </div>
       <div id="contact" className="home-section">
@@ -69,13 +54,28 @@ function Home() {
       <div id="experience" className="home-section">
         <h2>Experience</h2>
         <div className="home-section-border">
+          <span className="resume-company">Santa Rosa County School District</span>
+          <br />
+          <span className="resume-title">
+            Operations Analyst
+          </span>
+          <br />
+          <span className="resume-dates">October 2024 to Present</span>
+          <ul className="resume-list">
+            <li>Automate maintaining Azure groups/teams/education classes and users with Microsoft Graph API.</li>
+            <li>Automate maintaining Rapid Identity groups and users with Connect Action Sets.</li>
+            <li>Interface with Focus School Information System backend.</li>
+            <li>Develop tables, views, functions and queries in PostgreSQL Database.</li>
+            <li>Create and maintain Powershell scripts.</li>
+          </ul>
+
           <span className="resume-company">Henry Company Homes</span>
           <br />
           <span className="resume-title">
             Web/Software Development Consultant
           </span>
           <br />
-          <span className="resume-dates">October 2023 to Present</span>
+          <span className="resume-dates">October 2023 to October 2024</span>
           <ul className="resume-list">
             <li>Convert VB.Net websites to C#.</li>
             <li>Convert classic ASP websites to ASP.NET.</li>
@@ -235,12 +235,24 @@ function Home() {
           </div>
           <div>
             <img
+              src={require("./images/postgresql.png")}
+              alt="postgresql logo"
+            />
+          </div>
+          <div>
+            <img
               src={require("./images/mongodb-logo.png")}
               alt="mongo db logo"
             />
           </div>
           <div>
             <img src={require("./images/db2.png")} alt="ibm db2 logo" />
+          </div>
+          <div>
+            <img src={require("./images/rapid-identity.png")} alt="rapid identity logo" />
+          </div>
+          <div>
+            <img src={require("./images/focus.png")} alt="focus logo" />
           </div>
           <div>
             <img src={require("./images/cobol.png")} alt="cobol logo" />
