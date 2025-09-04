@@ -63,11 +63,11 @@ function Home() {
           <span className="resume-dates">October 2024 to Present</span>
           <ul className="resume-list">
             <li>
-              Automating maintaining Azure groups/teams/education classes and
+              Automating and maintaining Azure groups/teams/education classes and
               users with Microsoft Graph API.
             </li>
             <li>
-              Automating maintaining Rapid Identity groups and users with
+              Automating and maintaining Rapid Identity groups and users with
               Connect Action Sets.
             </li>
             <li>Interfacing with Focus School Information System backend.</li>
