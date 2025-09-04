@@ -31,13 +31,13 @@ function Home() {
         <h2>About Larry Byrd</h2>
         <div className="home-section-border">
           <p>I am a full stack software developer.</p>
-            <a
-              href="https://github.com/FullStackLarry"
-              rel="noreferrer"
-              target="_blank"
-            >
-              https://github.com/FullStackLarry
-            </a>
+          <a
+            href="https://github.com/FullStackLarry"
+            rel="noreferrer"
+            target="_blank"
+          >
+            https://github.com/FullStackLarry
+          </a>
         </div>
       </div>
       <div id="contact" className="home-section">
@@ -54,19 +54,28 @@ function Home() {
       <div id="experience" className="home-section">
         <h2>Experience</h2>
         <div className="home-section-border">
-          <span className="resume-company">Santa Rosa County School District</span>
-          <br />
-          <span className="resume-title">
-            Operations Analyst
+          <span className="resume-company">
+            Santa Rosa County School District
           </span>
+          <br />
+          <span className="resume-title">Operations Analyst</span>
           <br />
           <span className="resume-dates">October 2024 to Present</span>
           <ul className="resume-list">
-            <li>Automate maintaining Azure groups/teams/education classes and users with Microsoft Graph API.</li>
-            <li>Automate maintaining Rapid Identity groups and users with Connect Action Sets.</li>
-            <li>Interface with Focus School Information System backend.</li>
-            <li>Develop tables, views, functions and queries in PostgreSQL Database.</li>
-            <li>Create and maintain Powershell scripts.</li>
+            <li>
+              Automating maintaining Azure groups/teams/education classes and
+              users with Microsoft Graph API.
+            </li>
+            <li>
+              Automating maintaining Rapid Identity groups and users with
+              Connect Action Sets.
+            </li>
+            <li>Interfacing with Focus School Information System backend.</li>
+            <li>
+              Creating and maintaining tables, views, functions and queries in
+              PostgreSQL Database.
+            </li>
+            <li>Creating and maintaining Powershell scripts.</li>
           </ul>
 
           <span className="resume-company">Henry Company Homes</span>
@@ -77,9 +86,9 @@ function Home() {
           <br />
           <span className="resume-dates">October 2023 to October 2024</span>
           <ul className="resume-list">
-            <li>Convert VB.Net websites to C#.</li>
-            <li>Convert classic ASP websites to ASP.NET.</li>
-            <li>Convert VB6 Windows applications to C#.</li>
+            <li>Converted VB.Net websites to C#.</li>
+            <li>Converted classic ASP websites to ASP.NET.</li>
+            <li>Converted VB6 Windows applications to C#.</li>
           </ul>
           <span className="resume-company">
             Santa Rosa County School District
@@ -249,7 +258,10 @@ function Home() {
             <img src={require("./images/db2.png")} alt="ibm db2 logo" />
           </div>
           <div>
-            <img src={require("./images/rapid-identity.png")} alt="rapid identity logo" />
+            <img
+              src={require("./images/rapid-identity.png")}
+              alt="rapid identity logo"
+            />
           </div>
           <div>
             <img src={require("./images/focus.png")} alt="focus logo" />
