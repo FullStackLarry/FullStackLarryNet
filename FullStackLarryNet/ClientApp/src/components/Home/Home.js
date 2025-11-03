@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Home.css";
 
 function Home() {
@@ -14,10 +12,10 @@ function Home() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
             <a href="#certifications">Certifications</a>
@@ -51,6 +49,77 @@ function Home() {
           </p>
         </div>
       </div>
+      <div id="skills" className="home-section">
+        <h2>Skills</h2>
+        <div className="home-section-border home-skills">
+          <div>
+            <img src={require("./images/html-logo.png")} alt="html logo" />
+          </div>
+          <div>
+            <img src={require("./images/css-logo.png")} alt="css logo" />
+          </div>
+          <div>
+            <img src={require("./images/js-logo.png")} alt="javascript logo" />
+          </div>
+          <div>
+            <img src={require("./images/react-logo.png")} alt="react logo" />
+          </div>
+          <div>
+            <img src={require("./images/node-logo.png")} alt="node logo" />
+          </div>
+          <div>
+            <img src={require("./images/net-logo.png")} alt="dot net logo" />
+          </div>
+          <div>
+            <img
+              src={require("./images/vs-logo.png")}
+              alt="visual studio logo"
+            />
+          </div>
+          <div>
+            <img src={require("./images/git-logo.png")} alt="git logo" />
+          </div>
+          <div>
+            <img
+              src={require("./images/tfs-logo.png")}
+              alt="team foundation server logo"
+            />
+          </div>
+          <div>
+            <img
+              src={require("./images/sqlserver-logo.png")}
+              alt="sql server logo"
+            />
+          </div>
+          <div>
+            <img
+              src={require("./images/postgresql.png")}
+              alt="postgresql logo"
+            />
+          </div>
+          <div>
+            <img
+              src={require("./images/mongodb-logo.png")}
+              alt="mongo db logo"
+            />
+          </div>
+          <div>
+            <img src={require("./images/db2.png")} alt="ibm db2 logo" />
+          </div>
+          <div>
+            <img
+              src={require("./images/rapid-identity.png")}
+              alt="rapid identity logo"
+            />
+          </div>
+          <div>
+            <img src={require("./images/focus.png")} alt="focus logo" />
+          </div>
+          <div>
+            <img src={require("./images/cobol.png")} alt="cobol logo" />
+          </div>
+        </div>
+      </div>
       <div id="experience" className="home-section">
         <h2>Experience</h2>
         <div className="home-section-border">
@@ -63,8 +132,8 @@ function Home() {
           <span className="resume-dates">October 2024 to Present</span>
           <ul className="resume-list">
             <li>
-              Automating and maintaining Azure groups/teams/education classes and
-              users with Microsoft Graph API.
+              Automating and maintaining Azure groups/teams/education classes
+              and users with Microsoft Graph API.
             </li>
             <li>
               Automating and maintaining Rapid Identity groups and users with
@@ -200,77 +269,6 @@ function Home() {
           </ul>
         </div>
       </div>
-      <div id="skills" className="home-section">
-        <h2>Skills</h2>
-        <div className="home-section-border home-skills">
-          <div>
-            <img src={require("./images/html-logo.png")} alt="html logo" />
-          </div>
-          <div>
-            <img src={require("./images/css-logo.png")} alt="css logo" />
-          </div>
-          <div>
-            <img src={require("./images/js-logo.png")} alt="javascript logo" />
-          </div>
-          <div>
-            <img src={require("./images/react-logo.png")} alt="react logo" />
-          </div>
-          <div>
-            <img src={require("./images/node-logo.png")} alt="node logo" />
-          </div>
-          <div>
-            <img src={require("./images/net-logo.png")} alt="dot net logo" />
-          </div>
-          <div>
-            <img
-              src={require("./images/vs-logo.png")}
-              alt="visual studio logo"
-            />
-          </div>
-          <div>
-            <img src={require("./images/git-logo.png")} alt="git logo" />
-          </div>
-          <div>
-            <img
-              src={require("./images/tfs-logo.png")}
-              alt="team foundation server logo"
-            />
-          </div>
-          <div>
-            <img
-              src={require("./images/sqlserver-logo.png")}
-              alt="sql server logo"
-            />
-          </div>
-          <div>
-            <img
-              src={require("./images/postgresql.png")}
-              alt="postgresql logo"
-            />
-          </div>
-          <div>
-            <img
-              src={require("./images/mongodb-logo.png")}
-              alt="mongo db logo"
-            />
-          </div>
-          <div>
-            <img src={require("./images/db2.png")} alt="ibm db2 logo" />
-          </div>
-          <div>
-            <img
-              src={require("./images/rapid-identity.png")}
-              alt="rapid identity logo"
-            />
-          </div>
-          <div>
-            <img src={require("./images/focus.png")} alt="focus logo" />
-          </div>
-          <div>
-            <img src={require("./images/cobol.png")} alt="cobol logo" />
-          </div>
-        </div>
-      </div>
       <div id="certifications" className="home-section">
         <h2>Certifications</h2>
         <div className="home-section-border home-certifications">
@@ -280,7 +278,7 @@ function Home() {
               alt="CompTIA Security+ Certification logo"
             />
           </div>
-          <div>
+          {/* <div>
             <a
               href="http://verify.CompTIA.org"
               rel="noreferrer"
@@ -289,7 +287,7 @@ function Home() {
               Verify CompTIA Certificate
             </a>
             <p>Code: TL91C4ETE2EEQWS7</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div id="education" className="home-section">
