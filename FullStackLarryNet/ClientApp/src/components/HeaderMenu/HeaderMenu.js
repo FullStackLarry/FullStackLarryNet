@@ -20,6 +20,7 @@ function Header() {
           </div>
           <div className="dropdown-content">
             <Link to="/apps/taskmanager">Task Manager</Link>
+            <Link to="/apps/parlayoptimizer">Parlay Optimizer</Link>
           </div>
         </div>
         <div className="dropdown">

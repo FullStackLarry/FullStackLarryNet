@@ -7,6 +7,7 @@ import { APIUrl } from "./components/Apps/Data/api";
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
 import Home from "./components/Home/Home";
 import TaskManager from "./components/Apps/TaskManager/TaskManager";
+import ParlayOptimizer from "./components/Apps/ParlayOptimizer/ParlayOptimizer";
 import HangMan from "./components/Games/HangMan/HangMan";
 import Memory from "./components/Games/Memory/Memory";
 import MilleBornes from "./components/Games/MilleBornes/MilleBornes";
@@ -18,8 +19,11 @@ import "./App.css";
 function App() {
   useEffect(() => {
     axios.post(`${APIUrl()}log/`).catch((error) => {
-      if (process.env.NODE_ENV === "development")
-        alert(error.response.data.error);
+      if (process.env.NODE_ENV === "development") {
+        const errorMessage =
+          error?.response?.data?.error || error?.message || "Request failed";
+        alert(errorMessage);
+      }
     });
   }, []);
 
@@ -32,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/apps/taskmanager" element={<TaskManager />} />
+          <Route path="/apps/parlayoptimizer" element={<ParlayOptimizer />} />
           <Route path="/games/hangman" element={<HangMan />} />
           <Route path="/games/memory" element={<Memory />} />
           <Route path="/games/millebornes" element={<MilleBornes />} />
