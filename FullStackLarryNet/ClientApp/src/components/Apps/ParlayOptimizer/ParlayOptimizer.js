@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-import './ParlayOptimizer.css';
-import AppHeader from './AppHeader';
-import ParlaysGrid from './ParlaysGrid';
-import TotalBetSection from './TotalBetSection';
+import "./ParlayOptimizer.css";
+import AppHeader from "./AppHeader";
+import ParlaysGrid from "./ParlaysGrid";
+import TotalBetSection from "./TotalBetSection";
 
-const DEFAULT_TOTAL_BET = '10';
+const DEFAULT_TOTAL_BET = "10";
 
 const createParlay = (id) => ({
   id,
-  legs: ['-110', '-110'],
+  legs: ["-110"],
 });
 
 const oddsToDecimal = (odds) => {
@@ -24,8 +24,8 @@ const oddsToDecimal = (odds) => {
 
 const getParlayOdds = (parlay) => {
   return parlay.legs.reduce((product, leg, index) => {
-    // First two legs are required; additional legs are optional until provided.
-    if (index >= 2 && !leg) {
+    // First leg is required; additional legs are optional until provided.
+    if (index >= 1 && !leg) {
       return product;
     }
 
@@ -40,11 +40,11 @@ const calculateParlay = ({ totalBet, parlays }) => {
     return {
       parlays: parlays.map((parlay) => ({
         ...parlay,
-        odds: '',
-        bet: '',
-        win: '',
+        odds: "",
+        bet: "",
+        win: "",
       })),
-      optimalTotalWin: '',
+      optimalTotalWin: "",
       coveredParlays: 0,
     };
   }
@@ -72,17 +72,45 @@ const calculateParlay = ({ totalBet, parlays }) => {
     });
 
   const allocations = Array(parlays.length).fill(0);
-  let coveredParlays = 0;
   let committedUnits = 0;
 
-  for (const parlay of coverableParlays) {
-    if (committedUnits + parlay.minimumCoverUnits > totalBetUnits) {
-      continue;
+  // First pass: allocate 1 unit minimum to each parlay if possible
+  for (let i = 0; i < parlays.length; i++) {
+    if (committedUnits < totalBetUnits) {
+      allocations[i] = 1;
+      committedUnits += 1;
     }
+  }
 
-    allocations[parlay.index] = parlay.minimumCoverUnits;
-    committedUnits += parlay.minimumCoverUnits;
-    coveredParlays += 1;
+  // Second pass: optimize remaining units
+  let remainingUnits = totalBetUnits - committedUnits;
+  const coverableParlays2 = [...parlayData]
+    .filter((parlay) => {
+      const alreadyHas = allocations[parlay.index];
+      const additionalNeeded = Math.max(
+        0,
+        parlay.minimumCoverUnits - alreadyHas,
+      );
+      return additionalNeeded <= remainingUnits;
+    })
+    .sort((left, right) => {
+      if (left.minimumCoverUnits !== right.minimumCoverUnits) {
+        return left.minimumCoverUnits - right.minimumCoverUnits;
+      }
+
+      return right.odds - left.odds;
+    });
+
+  let coveredParlays = 0;
+  for (const parlay of coverableParlays2) {
+    const alreadyHas = allocations[parlay.index];
+    const additionalNeeded = Math.max(0, parlay.minimumCoverUnits - alreadyHas);
+
+    if (committedUnits + additionalNeeded <= totalBetUnits) {
+      allocations[parlay.index] += additionalNeeded;
+      committedUnits += additionalNeeded;
+      coveredParlays += 1;
+    }
   }
 
   const highestOddsParlay = parlayData.reduce(
@@ -178,7 +206,7 @@ function ParlayOptimizer() {
 
         return {
           ...parlay,
-          legs: [...parlay.legs, ''],
+          legs: [...parlay.legs, ""],
         };
       }),
     }));
@@ -192,7 +220,7 @@ function ParlayOptimizer() {
           return parlay;
         }
 
-        if (parlay.legs.length <= 2 || legIndex < 2) {
+        if (parlay.legs.length <= 1 || legIndex < 1) {
           return parlay;
         }
 
@@ -218,7 +246,15 @@ function ParlayOptimizer() {
   };
 
   return (
-    <div className='parlay-optimizer'>
+    <div className="parlay-optimizer">
+      <a
+        href="https://fullstacklarry.com/betfirm"
+        className="app-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Bet Firm
+      </a>
       <AppHeader onAddParlay={handleAddParlay} />
       <TotalBetSection
         totalBet={inputs.totalBet}
